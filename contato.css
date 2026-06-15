@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img, fieldset {
+    border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0a0a2a;
+    color: #fff;
+}
+
+a:link {
+    color: #ff4444;
+}
+
+a:hover {
+    color: #FF6600;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+}
+
+#conteudo-principal h1 {
+    font-size: 36px;
+    margin-bottom: 0.5em;
+    color: #ff4444;
+}
+
+/* CABEÇALHO */
+#cabecalho {
+    background: linear-gradient(135deg, #1a1a3a, #0a0a2a);
+    padding: 20px;
+    border-bottom: 3px solid #ff4444;
+}
+
+#cabecalho, #conteudo, #rodape {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#logo {
+    float: left;
+    display: block;
+}
+
+#logo img {
+    height: 60px;
+    width: auto;
+}
+
+#menu-principal {
+    float: right;
+    margin-top: 20px;
+}
+
+#menu-principal li {
+    display: inline;
+    margin-left: 30px;
+}
+
+#menu-principal a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 10px 15px;
+}
+
+#menu-principal a:hover,
+#menu-principal a.ativo {
+    color: #ff4444;
+    border-bottom: 2px solid #ff4444;
+}
+
+/* FOTO PRINCIPAL */
+#foto-principal {
+    height: 110px;
+    background: linear-gradient(135deg, #1a1a5a, #0a0a2a);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ESTRUTURA */
+#conteudo {
+    padding: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#conteudo-principal {
+    float: left;
+    width: 75%;
+}
+
+#conteudo-secundario {
+    float: right;
+    width: 22%;
+    background: #1a1a3a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FORMULÁRIO */
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.campo abbr {
+    color: #ff4444;
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 8px;
+    box-sizing: border-box;
+    background: #1a1a3a;
+    color: #fff;
+}
+
+.campo input:focus,
+.campo textarea:focus,
+.campo select:focus {
+    border-color: #ff4444;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 68, 68, 0.3);
+}
+
+.campo textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+label.checkbox {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+label.checkbox input {
+    width: auto;
+    display: inline;
+    margin-right: 5px;
+}
+
+fieldset.grupo {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 20px;
+}
+
+.campo.nome,
+.campo.empresa {
+    width: calc(50% - 10px);
+}
+
+.campo.telefone {
+    width: calc(50% - 10px);
+}
+
+fieldset.grupo .campo.empresa {
+    margin-right: 0;
+    float: right;
+}
+
+.submit {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.submit:hover {
+    background: #cc0000;
+    transform: scale(1.02);
+}
+
+/* SIDEBAR */
+.interna h1, .interna h2 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #ff4444;
+}
+
+.interna p {
+    font-size: 14px;
+}
+
+.interna a {
+    color: #ff4444;
+    text-decoration: none;
+}
+
+/* RODAPÉ */
+#rodape-fora {
+    background: #0a0a1a;
+    margin-top: 30px;
+}
+
+#rodape {
+    padding: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#telefone-email {
+    float: left;
+    width: 33%;
+    color: #ccc;
+}
+
+#telefone-email span.ddd {
+    color: #ff4444;
+}
+
+#endereco {
+    float: left;
+    width: 33%;
+    color: #ccc;
+}
+
+#copyright {
+    float: right;
+    width: 33%;
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+    padding-top: 10px;
+}
+
+/* UTILITÁRIOS */
+.grupo:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    #conteudo-principal, #conteudo-secundario {
+        float: none;
+        width: 100%;
+    }
+    #conteudo-secundario {
+        margin-top: 30px;
+    }
+    #menu-principal {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #menu-principal li {
+        margin: 0 10px;
+    }
+    #logo {
+        float: none;
+        text-align: center;
+    }
+    #telefone-email, #endereco, #copyright {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .campo.nome, .campo.empresa, .campo.telefone {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    fieldset.grupo .campo {
+        float: none;
+        margin-right: 0;
+    }
+}

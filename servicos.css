@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img, fieldset {
+    border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0a0a2a;
+    color: #fff;
+}
+
+a:link {
+    color: #ff4444;
+}
+
+a:hover {
+    color: #FF6600;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+}
+
+#conteudo-principal h1 {
+    font-size: 36px;
+    margin-bottom: 0.5em;
+    color: #ff4444;
+}
+
+#conteudo-principal h2 {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+    color: #ff4444;
+    border-left: 4px solid #ff4444;
+    padding-left: 15px;
+    margin-top: 25px;
+}
+
+/* CABEÇALHO */
+#cabecalho {
+    background: linear-gradient(135deg, #1a1a3a, #0a0a2a);
+    padding: 20px;
+    border-bottom: 3px solid #ff4444;
+}
+
+#cabecalho, #conteudo, #rodape {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#logo {
+    float: left;
+    display: block;
+}
+
+#logo img {
+    height: 60px;
+    width: auto;
+}
+
+#menu-principal {
+    float: right;
+    margin-top: 20px;
+}
+
+#menu-principal li {
+    display: inline;
+    margin-left: 30px;
+}
+
+#menu-principal a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 10px 15px;
+}
+
+#menu-principal a:hover,
+#menu-principal a.ativo {
+    color: #ff4444;
+    border-bottom: 2px solid #ff4444;
+}
+
+/* FOTO PRINCIPAL */
+#foto-principal {
+    height: 110px;
+    background: linear-gradient(135deg, #1a1a5a, #0a0a2a);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ESTRUTURA */
+#conteudo {
+    padding: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#conteudo-principal {
+    float: left;
+    width: 75%;
+}
+
+#conteudo-secundario {
+    float: right;
+    width: 22%;
+    background: #1a1a3a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* TABELA DE SERVIÇOS */
+.tabela-servicos {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1a3a;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.tabela-servicos caption {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 15px;
+    color: #ff4444;
+    font-weight: bold;
+}
+
+.tabela-servicos th {
+    background: #ff4444;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabela-servicos td {
+    padding: 12px;
+    border-bottom: 1px solid #333;
+}
+
+.tabela-servicos tr:hover td {
+    background: #2a2a4a;
+}
+
+.prazo-entrega {
+    text-align: center;
+}
+
+.valor-servico {
+    text-align: right;
+    color: #ff4444;
+    font-weight: bold;
+}
+
+/* DEPOIMENTOS */
+.depoimento {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #1a1a3a;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.depoimento:hover {
+    transform: translateX(5px);
+}
+
+.depoimento blockquote {
+    font-size: 14px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    line-height: 1.5em;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.depoimento .autor {
+    text-align: right;
+    font-size: 12px;
+    color: #ff4444;
+    font-weight: bold;
+}
+
+/* SIDEBAR */
+.interna h1, .interna h2 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #ff4444;
+}
+
+.interna p {
+    font-size: 14px;
+}
+
+.interna a {
+    color: #ff4444;
+    text-decoration: none;
+}
+
+/* RODAPÉ */
+#rodape-fora {
+    background: #0a0a1a;
+    margin-top: 30px;
+}
+
+#rodape {
+    padding: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#telefone-email {
+    float: left;
+    width: 33%;
+    color: #ccc;
+}
+
+#telefone-email span.ddd {
+    color: #ff4444;
+}
+
+#endereco {
+    float: left;
+    width: 33%;
+    color: #ccc;
+}
+
+#copyright {
+    float: right;
+    width: 33%;
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+    padding-top: 10px;
+}
+
+/* UTILITÁRIOS */
+.grupo:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    #conteudo-principal, #conteudo-secundario {
+        float: none;
+        width: 100%;
+    }
+    #conteudo-secundario {
+        margin-top: 30px;
+    }
+    #menu-principal {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #menu-principal li {
+        margin: 0 10px;
+    }
+    #logo {
+        float: none;
+        text-align: center;
+    }
+    #telefone-email, #endereco, #copyright {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .tabela-servicos th, .tabela-servicos td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

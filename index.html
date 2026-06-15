@@ -1,0 +1,1260 @@
+<!DOCTYPE HTML>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Newstation Studio - Loja PlayStation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bd-home">
+
+<div id="site">
+    <div id="cabecalho" class="grupo">
+        <a href="index.html" id="logo">
+            <img src="logo.png" alt="Newstation Studio" onerror="this.src='https://via.placeholder.com/150x60?text=Newstation+Studio'">
+        </a>
+        <div id="menu-principal">
+            <ul class="grupo">
+                <li><a class="ativo" href="index.html">Home</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+        
+        <!-- BARRA DE PESQUISA -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="🔍 Pesquisar jogos..." class="search-input">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <!-- BOTÃO MODO ESCURO/CLARO -->
+        <div id="theme-toggle" class="theme-toggle">
+            <span class="theme-icon">🌙</span>
+        </div>
+        
+        <div class="icones-container">
+            <div id="favoritos-icone">
+                <span class="favoritos-icon">⭐</span>
+                <span id="favoritos-contador" class="favoritos-contador">0</span>
+            </div>
+            <div id="carrinho-icone">
+                <span class="carrinho-icon">🛒</span>
+                <span id="carrinho-contador" class="carrinho-contador">0</span>
+            </div>
+        </div>
+    </div>
+    <div id="foto-principal"></div>
+    
+    <!-- SEÇÃO DE LANÇAMENTOS -->
+    <div id="lancamentos">
+        <h2>🎮 LANÇAMENTOS 🔥</h2>
+        <div class="lancamentos-grid" id="lancamentos-grid"></div>
+    </div>
+    
+    <div id="conteudo" class="grupo">
+        <div id="conteudo-principal">
+            <h1>Newstation Studio</h1>
+            
+            <p>Bem-vindo à <strong>Newstation Studio</strong>. Selecione o console:</p>
+            
+            <div class="botoes-consoles">
+                <button class="btn-console btn-ps1" data-console="ps1">PS1</button>
+                <button class="btn-console btn-ps2" data-console="ps2">PS2</button>
+                <button class="btn-console btn-ps3" data-console="ps3">PS3</button>
+                <button class="btn-console btn-ps4" data-console="ps4">PS4</button>
+                <button class="btn-console btn-ps5 ativo-console" data-console="ps5">PS5</button>
+            </div>
+            
+            <!-- PS1 - 20 JOGOS -->
+            <div id="lista-ps1" class="lista-jogos">
+                <h2>PlayStation 1 (PS1) - Antiga geração</h2>
+                <div class="grid-jogos">
+                    <div class="card-jogo" data-nome="Crash Bandicoot" data-preco="29.90" data-descricao="Clássico plataforma da Naughty Dog. Crash precisa salvar sua namorada e derrotar o Dr. Neo Cortex." data-console="ps1">
+                        <img src="crash1.jpg" alt="Crash Bandicoot" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Crash'">
+                        <h3>Crash Bandicoot</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.5">⭐⭐⭐⭐☆ 4.5</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Crash Bandicoot 2" data-preco="29.90" data-descricao="Crash volta em mais uma aventura para derrotar Cortex e salvar o mundo." data-console="ps1">
+                        <img src="crash2.jpg" alt="Crash Bandicoot 2" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Crash+2'">
+                        <h3>Crash Bandicoot 2</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.6">⭐⭐⭐⭐☆ 4.6</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Crash Bandicoot 3" data-preco="29.90" data-descricao="Crash viaja no tempo para recuperar as pedras mágicas." data-console="ps1">
+                        <img src="crash3.jpg" alt="Crash Bandicoot 3" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Crash+3'">
+                        <h3>Crash Bandicoot 3</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.7">⭐⭐⭐⭐☆ 4.7</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Spyro" data-preco="34.90" data-descricao="Spyro o dragão roxo precisa salvar seus amigos dragões." data-console="ps1">
+                        <img src="spyro.jpg" alt="Spyro" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Spyro'">
+                        <h3>Spyro</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.4">⭐⭐⭐⭐☆ 4.4</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Dino Crisis" data-preco="44.90" data-descricao="Terror e ação com dinossauros em um laboratório secreto." data-console="ps1">
+                        <img src="dinocrisis.jpg" alt="Dino Crisis" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Dino+Crisis'">
+                        <h3>Dino Crisis</h3>
+                        <div class="preco">€44,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Dino Crisis 2" data-preco="44.90" data-descricao="Continuação do clássico de terror com dinossauros." data-console="ps1">
+                        <img src="dinocrisis2.jpg" alt="Dino Crisis 2" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Dino+Crisis+2'">
+                        <h3>Dino Crisis 2</h3>
+                        <div class="preco">€44,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Castlevania" data-preco="69.90" data-descricao="Clássico de ação e plataforma da Konami." data-console="ps1">
+                        <img src="castlevania.jpg" alt="Castlevania" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Castlevania'">
+                        <h3>Castlevania</h3>
+                        <div class="preco">€69,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Chrono Cross" data-preco="54.90" data-descricao="RPG lendário da Square Enix." data-console="ps1">
+                        <img src="chronocross.jpg" alt="Chrono Cross" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Chrono+Cross'">
+                        <h3>Chrono Cross</h3>
+                        <div class="preco">€54,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Gran Turismo" data-preco="24.90" data-descricao="O simulador de corrida que começou tudo." data-console="ps1">
+                        <img src="granturismo.jpg" alt="Gran Turismo" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Gran+Turismo'">
+                        <h3>Gran Turismo</h3>
+                        <div class="preco">€24,90</div>
+                        <div class="estrelas" data-avaliacao="4.6">⭐⭐⭐⭐☆ 4.6</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Toy Story" data-preco="29.90" data-descricao="Baseado no filme da Disney/Pixar." data-console="ps1">
+                        <img src="toystory.jpg" alt="Toy Story" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Toy+Story'">
+                        <h3>Toy Story</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.3">⭐⭐⭐⭐☆ 4.3</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Medal of Honor Underground" data-preco="34.90" data-descricao="FPS de Segunda Guerra Mundial." data-console="ps1">
+                        <img src="medalofhonor.jpg" alt="Medal of Honor Underground" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Medal+of+Honor'">
+                        <h3>Medal of Honor Underground</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.5">⭐⭐⭐⭐☆ 4.5</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Metal Gear Solid" data-preco="49.90" data-descricao="O clássico stealth de Hideo Kojima." data-console="ps1">
+                        <img src="mgs.jpg" alt="Metal Gear Solid" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Metal+Gear+Solid'">
+                        <h3>Metal Gear Solid (1998)</h3>
+                        <div class="preco">€49,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Parasite Eve" data-preco="59.90" data-descricao="RPG de terror com mutações celulares." data-console="ps1">
+                        <img src="parasiteeve.jpg" alt="Parasite Eve" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Parasite+Eve'">
+                        <h3>Parasite Eve</h3>
+                        <div class="preco">€59,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Silent Hill" data-preco="89.90" data-descricao="O terror psicológico que marcou época." data-console="ps1">
+                        <img src="sh.png" alt="Silent Hill" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Silent+Hill'">
+                        <h3>Silent Hill</h3>
+                        <div class="preco">€89,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Toy Story 2" data-preco="29.90" data-descricao="Continuação do jogo baseado no filme." data-console="ps1">
+                        <img src="toystory2.jpg" alt="Toy Story 2" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Toy+Story+2'">
+                        <h3>Toy Story 2</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.4">⭐⭐⭐⭐☆ 4.4</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Legend of Legaia" data-preco="54.90" data-descricao="RPG com sistema de combate único." data-console="ps1">
+                        <img src="legendoflegaia.jpg" alt="Legend of Legaia" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Legend+of+Legaia'">
+                        <h3>Legend of Legaia</h3>
+                        <div class="preco">€54,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Gran Turismo 2" data-preco="24.90" data-descricao="Melhorias e mais carros que o original." data-console="ps1">
+                        <img src="granturismo2.jpg" alt="Gran Turismo 2" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Gran+Turismo+2'">
+                        <h3>Gran Turismo 2</h3>
+                        <div class="preco">€24,90</div>
+                        <div class="estrelas" data-avaliacao="4.7">⭐⭐⭐⭐☆ 4.7</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Legend of Dragoon" data-preco="59.90" data-descricao="RPG épico da Sony." data-console="ps1">
+                        <img src="legendofdragoon.jpg" alt="Legend of Dragoon" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Legend+of+Dragoon'">
+                        <h3>Legend of Dragoon</h3>
+                        <div class="preco">€59,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Tenchu 2" data-preco="44.90" data-descricao="Stealth de ninjas." data-console="ps1">
+                        <img src="tenchu2.jpg" alt="Tenchu 2" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Tenchu+2'">
+                        <h3>Tenchu 2</h3>
+                        <div class="preco">€44,90</div>
+                        <div class="estrelas" data-avaliacao="4.6">⭐⭐⭐⭐☆ 4.6</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Resident Evil" data-preco="54.90" data-descricao="O clássico survival horror na mansão dos Umbrella." data-console="ps1">
+                        <img src="residentevil.jpg" alt="Resident Evil" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Resident+Evil'">
+                        <h3>Resident Evil</h3>
+                        <div class="preco">€54,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PS2 - 20 JOGOS -->
+            <div id="lista-ps2" class="lista-jogos">
+                <h2>PlayStation 2 (PS2) - Coleção Especial</h2>
+                <div class="grid-jogos">
+                    <div class="card-jogo" data-nome="Devil May Cry 3" data-preco="39.90" data-descricao="Ação frenética com Dante." data-console="ps2">
+                        <img src="devilmycry3.jpg" alt="Devil May Cry 3" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Devil+May+Cry+3'">
+                        <h3>Devil May Cry 3: Awakening</h3>
+                        <div class="preco">€39,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Devil May Cry" data-preco="34.90" data-descricao="O início da série de ação." data-console="ps2">
+                        <img src="dmc1.jpg" alt="Devil May Cry" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Devil+May+Cry'">
+                        <h3>Devil May Cry</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Devil May Cry 2" data-preco="34.90" data-descricao="Continuação da série." data-console="ps2">
+                        <img src="dmc2.webp" alt="Devil May Cry 2" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Devil+May+Cry+2'">
+                        <h3>Devil May Cry 2</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.2">⭐⭐⭐⭐☆ 4.2</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Final Fantasy X" data-preco="44.90" data-descricao="RPG épico da Square." data-console="ps2">
+                        <img src="ffX.jpg" alt="Final Fantasy X" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Final+Fantasy+X'">
+                        <h3>Final Fantasy X</h3>
+                        <div class="preco">€44,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="God of War" data-preco="34.90" data-descricao="Kratos busca vingança contra os deuses do Olimpo." data-console="ps2">
+                        <img src="gow.jpg" alt="God of War" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=God+of+War'">
+                        <h3>God of War</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="God of War II" data-preco="34.90" data-descricao="Kratos continua sua vingança." data-console="ps2">
+                        <img src="gow2.jpg" alt="God of War II" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=God+of+War+II'">
+                        <h3>God of War II</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="GTA San Andreas" data-preco="29.90" data-descricao="O clássico mundo aberto de Los Santos." data-console="ps2">
+                        <img src="gta.jpg" alt="GTA San Andreas" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=GTA+San+Andreas'">
+                        <h3>GTA San Andreas</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="GTA Vice City" data-preco="29.90" data-descricao="Anos 80 em Miami." data-console="ps2">
+                        <img src="gtavice.jpg" alt="GTA Vice City" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=GTA+Vice+City'">
+                        <h3>GTA Vice City</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Guitar Hero World Tour" data-preco="24.90" data-descricao="Toque guitarra com os amigos." data-console="ps2">
+                        <img src="guitarhero.jpg" alt="Guitar Hero World Tour" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Guitar+Hero'">
+                        <h3>Guitar Hero World Tour</h3>
+                        <div class="preco">€24,90</div>
+                        <div class="estrelas" data-avaliacao="4.5">⭐⭐⭐⭐☆ 4.5</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Jak and Daxter" data-preco="29.90" data-descricao="Plataforma coletável." data-console="ps2">
+                        <img src="jak1.png" alt="Jak and Daxter" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Jak+and+Daxter'">
+                        <h3>Jak and Daxter</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.7">⭐⭐⭐⭐⭐ 4.7</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Jak II" data-preco="29.90" data-descricao="Continuação mais sombria." data-console="ps2">
+                        <img src="jak2.png" alt="Jak II" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Jak+II'">
+                        <h3>Jak II</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Kingdom Hearts" data-preco="39.90" data-descricao="Final Fantasy encontra Disney." data-console="ps2">
+                        <img src="kingdon.jpg" alt="Kingdom Hearts" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Kingdom+Hearts'">
+                        <h3>Kingdom Hearts</h3>
+                        <div class="preco">€39,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Metal Gear Solid 3" data-preco="44.90" data-descricao="Snake na Guerra Fria." data-console="ps2">
+                        <img src="mgs3.jpg" alt="Metal Gear Solid 3" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=MGS+3'">
+                        <h3>Metal Gear Solid 3</h3>
+                        <div class="preco">€44,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Metal Gear Solid 2" data-preco="39.90" data-descricao="Stealth em alto mar." data-console="ps2">
+                        <img src="mtgs2.jpg" alt="Metal Gear Solid 2" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=MGS+2'">
+                        <h3>Metal Gear Solid 2</h3>
+                        <div class="preco">€39,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Prince of Persia" data-preco="29.90" data-descricao="Controle o tempo." data-console="ps2">
+                        <img src="princeofpersia.jpg" alt="Prince of Persia" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Prince+of+Persia'">
+                        <h3>Prince of Persia</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Resident Evil 4" data-preco="44.90" data-descricao="Revolucionou a série." data-console="ps2">
+                        <img src="resident4.webp" alt="Resident Evil 4" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Resident+Evil+4'">
+                        <h3>Resident Evil 4</h3>
+                        <div class="preco">€44,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Silent Hill 2" data-preco="89.90" data-descricao="O terror psicológico que marcou geração." data-console="ps2">
+                        <img src="SH2.webp" alt="Silent Hill 2" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Silent+Hill+2'">
+                        <h3>Silent Hill 2</h3>
+                        <div class="preco">€89,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Shadow of the Colossus" data-preco="39.90" data-descricao="Derrote colossos gigantes." data-console="ps2">
+                        <img src="shadowofthecolossus.jpg" alt="Shadow of the Colossus" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Shadow+Colossus'">
+                        <h3>Shadow of the Colossus</h3>
+                        <div class="preco">€39,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Silent Hill 3" data-preco="79.90" data-descricao="Terror psicológico feminino." data-console="ps2">
+                        <img src="silenthill3.jpg" alt="Silent Hill 3" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Silent+Hill+3'">
+                        <h3>Silent Hill 3</h3>
+                        <div class="preco">€79,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Jak 3" data-preco="29.90" data-descricao="Conclusão da trilogia." data-console="ps2">
+                        <img src="Jak3.png" alt="Jak 3" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Jak+3'">
+                        <h3>Jak 3</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PS3 - 20 JOGOS -->
+            <div id="lista-ps3" class="lista-jogos">
+                <h2>PlayStation 3 (PS3) - Coleção Premium</h2>
+                <div class="grid-jogos">
+                    <div class="card-jogo" data-nome="Batman Arkham City" data-preco="24.90" data-descricao="Batman enfrenta seus maiores vilões." data-console="ps3">
+                        <img src="batman.jpg" alt="Batman Arkham City" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Batman+Arkham+City'">
+                        <h3>Batman: Arkham City</h3>
+                        <div class="preco">€24,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Dark Souls" data-preco="29.90" data-descricao="RPG de dificuldade lendária." data-console="ps3">
+                        <img src="darksouls.jpg" alt="Dark Souls" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Dark+Souls'">
+                        <h3>Dark Souls</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Dark Souls II" data-preco="29.90" data-descricao="Continuação da saga." data-console="ps3">
+                        <img src="Dark-Souls-II-PS3.jpg" alt="Dark Souls II" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Dark+Souls+II'">
+                        <h3>Dark Souls II</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Demon's Souls" data-preco="34.90" data-descricao="O precursor de Dark Souls." data-console="ps3">
+                        <img src="demonsouls.jpg" alt="Demon's Souls" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Demon+Souls'">
+                        <h3>Demon's Souls</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Skyrim" data-preco="24.90" data-descricao="O épico mundo aberto da Bethesda." data-console="ps3">
+                        <img src="elderscroll.jpg" alt="Skyrim" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Skyrim'">
+                        <h3>The Elder Scrolls V: Skyrim</h3>
+                        <div class="preco">€24,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Fast & Furious Showdown" data-preco="19.90" data-descricao="Baseado no filme." data-console="ps3">
+                        <img src="Fast-Furious-Showdown-PS3.jpg" alt="Fast & Furious Showdown" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Fast+Furious'">
+                        <h3>Fast & Furious: Showdown</h3>
+                        <div class="preco">€19,90</div>
+                        <div class="estrelas" data-avaliacao="3.5">⭐⭐⭐☆☆ 3.5</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="FIFA Street" data-preco="22.90" data-descricao="Futebol de rua." data-console="ps3">
+                        <img src="FIFA-Street-PS3.jpg" alt="FIFA Street" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=FIFA+Street'">
+                        <h3>FIFA Street</h3>
+                        <div class="preco">€22,90</div>
+                        <div class="estrelas" data-avaliacao="4.2">⭐⭐⭐⭐☆ 4.2</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="God of War III" data-preco="22.90" data-descricao="O fim da vingança de Kratos." data-console="ps3">
+                        <img src="God-of-War-III-PS3.jpg" alt="God of War III" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=God+of+War+III'">
+                        <h3>God of War III</h3>
+                        <div class="preco">€22,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="GTA V" data-preco="19.90" data-descricao="O mundo aberto definitivo." data-console="ps3">
+                        <img src="gta5.jpg" alt="GTA V" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=GTA+V'">
+                        <h3>Grand Theft Auto V</h3>
+                        <div class="preco">€19,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Metal Gear Solid 4" data-preco="34.90" data-descricao="O fim da saga Solid Snake." data-console="ps3">
+                        <img src="mtg4.jpg" alt="Metal Gear Solid 4" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=MGS+4'">
+                        <h3>Metal Gear Solid 4</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Portal 2" data-preco="19.90" data-descricao="Quebra-cabeças com portal." data-console="ps3">
+                        <img src="portal2.jpg" alt="Portal 2" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Portal+2'">
+                        <h3>Portal 2</h3>
+                        <div class="preco">€19,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Red Dead Redemption" data-preco="29.90" data-descricao="O velho oeste da Rockstar." data-console="ps3">
+                        <img src="rd1.jpg" alt="Red Dead Redemption" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Red+Dead+Redemption'">
+                        <h3>Red Dead Redemption</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="The Last of Us" data-preco="24.90" data-descricao="Joel e Ellie em um mundo pós-apocalíptico." data-console="ps3">
+                        <img src="tloups3.jpg" alt="The Last of Us" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=The+Last+of+Us'">
+                        <h3>The Last of Us</h3>
+                        <div class="preco">€24,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="The Walking Dead" data-preco="19.90" data-descricao="Série de decisões." data-console="ps3">
+                        <img src="twd1.webp" alt="The Walking Dead" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Walking+Dead'">
+                        <h3>The Walking Dead: Season 1</h3>
+                        <div class="preco">€19,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Uncharted" data-preco="19.90" data-descricao="Caçada ao tesouro." data-console="ps3">
+                        <img src="uncharted1.jpg" alt="Uncharted" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Uncharted'">
+                        <h3>Uncharted: Drake's Fortune</h3>
+                        <div class="preco">€19,90</div>
+                        <div class="estrelas" data-avaliacao="4.6">⭐⭐⭐⭐☆ 4.6</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Uncharted 2" data-preco="19.90" data-descricao="O melhor da trilogia." data-console="ps3">
+                        <img src="uncharted2.webp" alt="Uncharted 2" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Uncharted+2'">
+                        <h3>Uncharted 2: Among Thieves</h3>
+                        <div class="preco">€19,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Uncharted 3" data-preco="19.90" data-descricao="Continuação da saga." data-console="ps3">
+                        <img src="uncharted3.webp" alt="Uncharted 3" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Uncharted+3'">
+                        <h3>Uncharted 3: Drake's Deception</h3>
+                        <div class="preco">€19,90</div>
+                        <div class="estrelas" data-avaliacao="4.7">⭐⭐⭐⭐☆ 4.7</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="LEGO Marvel" data-preco="17.90" data-descricao="Heróis da Marvel em LEGO." data-console="ps3">
+                        <img src="legomarvel.jpg" alt="LEGO Marvel" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=LEGO+Marvel'">
+                        <h3>LEGO Marvel Super Heroes</h3>
+                        <div class="preco">€17,90</div>
+                        <div class="estrelas" data-avaliacao="4.4">⭐⭐⭐⭐☆ 4.4</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="AC Black Flag" data-preco="19.90" data-descricao="Assassinos e piratas." data-console="ps3">
+                        <img src="acb.jpg" alt="AC Black Flag" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=AC+Black+Flag'">
+                        <h3>Assassin's Creed IV: Black Flag</h3>
+                        <div class="preco">€19,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Far Cry 3" data-preco="19.90" data-descricao="Vaas e a ilha maluca." data-console="ps3">
+                        <img src="farcry3.jpg" alt="Far Cry 3" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Far+Cry+3'">
+                        <h3>Far Cry 3</h3>
+                        <div class="preco">€19,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PS4 - 20 JOGOS -->
+            <div id="lista-ps4" class="lista-jogos">
+                <h2>PlayStation 4 (PS4) - Coleção Épica</h2>
+                <div class="grid-jogos">
+                    <div class="card-jogo" data-nome="ARK" data-preco="29.90" data-descricao="Sobreviva com dinossauros." data-console="ps4">
+                        <img src="ark.jpg" alt="ARK" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=ARK'">
+                        <h3>ARK: Survival Evolved</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.5">⭐⭐⭐⭐☆ 4.5</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Blasphemous" data-preco="34.90" data-descricao="Metroidvania religioso." data-console="ps4">
+                        <img src="blaspemous.jpg" alt="Blasphemous" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Blasphemous'">
+                        <h3>Blasphemous Deluxe Edition</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Bloodborne" data-preco="24.90" data-descricao="Souls-like em Yharnam." data-console="ps4">
+                        <img src="bloodborne.jpg" alt="Bloodborne" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Bloodborne'">
+                        <h3>Bloodborne</h3>
+                        <div class="preco">€24,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Cyberpunk 2077" data-preco="39.90" data-descricao="RPG futurista da CDPR." data-console="ps4">
+                        <img src="cp2077.jpg" alt="Cyberpunk 2077" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Cyberpunk+2077'">
+                        <h3>Cyberpunk 2077</h3>
+                        <div class="preco">€39,90</div>
+                        <div class="estrelas" data-avaliacao="4.4">⭐⭐⭐⭐☆ 4.4</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Crash 4" data-preco="44.90" data-descricao="Crash de volta em nova aventura." data-console="ps4">
+                        <img src="crash.jpg" alt="Crash 4" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Crash+4'">
+                        <h3>Crash Bandicoot 4</h3>
+                        <div class="preco">€44,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Death Stranding" data-preco="34.90" data-descricao="Entregas em mundo pós-apocalíptico." data-console="ps4">
+                        <img src="deathstranding.webp" alt="Death Stranding" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Death+Stranding'">
+                        <h3>Death Stranding</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Elden Ring" data-preco="49.90" data-descricao="O mundo aberto da FromSoftware." data-console="ps4">
+                        <img src="eldenringo.webp" alt="Elden Ring" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Elden+Ring'">
+                        <h3>Elden Ring</h3>
+                        <div class="preco">€49,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="God of War 2018" data-preco="19.90" data-descricao="Kratos e Atreus na mitologia nórdica." data-console="ps4">
+                        <img src="gow.webp" alt="God of War" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=God+of+War'">
+                        <h3>God of War (2018)</h3>
+                        <div class="preco">€19,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Hogwarts Legacy" data-preco="54.90" data-descricao="O mundo mágico de Harry Potter." data-console="ps4">
+                        <img src="hogwars.jpg" alt="Hogwarts Legacy" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Hogwarts+Legacy'">
+                        <h3>Hogwarts Legacy</h3>
+                        <div class="preco">€54,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Horizon Zero Dawn" data-preco="24.90" data-descricao="Aloy em mundo pós-apocalíptico." data-console="ps4">
+                        <img src="horion.webp" alt="Horizon" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Horizon+ZD'">
+                        <h3>Horizon Zero Dawn</h3>
+                        <div class="preco">€24,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Mafia" data-preco="34.90" data-descricao="Remake do clássico dos anos 30." data-console="ps4">
+                        <img src="mafia.webp" alt="Mafia" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Mafia'">
+                        <h3>Mafia: Definitive Edition</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Need for Speed" data-preco="29.90" data-descricao="Corridas de rua." data-console="ps4">
+                        <img src="nfs.jpg" alt="Need for Speed" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Need+for+Speed'">
+                        <h3>Need for Speed</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.3">⭐⭐⭐⭐☆ 4.3</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Red Dead Redemption 2" data-preco="39.90" data-descricao="O velho oeste da Rockstar." data-console="ps4">
+                        <img src="reddead.jpg" alt="RDR2" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Red+Dead+2'">
+                        <h3>Red Dead Redemption 2</h3>
+                        <div class="preco">€39,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Slime Rancher" data-preco="19.90" data-descricao="Colete slimes adoráveis." data-console="ps4">
+                        <img src="slime.jpg" alt="Slime Rancher" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Slime+Rancher'">
+                        <h3>Slime Rancher</h3>
+                        <div class="preco">€19,90</div>
+                        <div class="estrelas" data-avaliacao="4.6">⭐⭐⭐⭐☆ 4.6</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Spider-Man" data-preco="34.90" data-descricao="Balance por Nova York." data-console="ps4">
+                        <img src="spider.jpg" alt="Spider-Man" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Spider-Man'">
+                        <h3>Marvel's Spider-Man</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Stardew Valley" data-preco="14.90" data-descricao="Simulador de fazenda." data-console="ps4">
+                        <img src="stardewvalley.jpg" alt="Stardew Valley" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Stardew+Valley'">
+                        <h3>Stardew Valley</h3>
+                        <div class="preco">€14,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Terraria" data-preco="24.90" data-descricao="Explore, construa, sobreviva." data-console="ps4">
+                        <img src="terraria.jpg" alt="Terraria" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Terraria'">
+                        <h3>Terraria</h3>
+                        <div class="preco">€24,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Elder Scrolls Online" data-preco="19.90" data-descricao="MMO em Tamriel." data-console="ps4">
+                        <img src="The-Elder-Scrolls-Online.jpg" alt="ESO" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Elder+Scrolls+Online'">
+                        <h3>The Elder Scrolls Online</h3>
+                        <div class="preco">€19,90</div>
+                        <div class="estrelas" data-avaliacao="4.5">⭐⭐⭐⭐☆ 4.5</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="The Last of Us Remastered" data-preco="24.90" data-descricao="O clássico remasterizado." data-console="ps4">
+                        <img src="tlou.jpg" alt="TLoU" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=The+Last+of+Us'">
+                        <h3>The Last of Us Remastered</h3>
+                        <div class="preco">€24,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Uncharted 4" data-preco="19.90" data-descricao="O fim da saga Nathan Drake." data-console="ps4">
+                        <img src="uncharted4.webp" alt="Uncharted 4" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Uncharted+4'">
+                        <h3>Uncharted 4: A Thief's End</h3>
+                        <div class="preco">€19,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="The Last of Us Part II" data-preco="34.90" data-descricao="Continuação da saga Ellie." data-console="ps4">
+                        <img src="tlou2.jpg" alt="TLoU2" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=The+Last+of+Us+2'">
+                        <h3>The Last of Us Part II</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PS5 - 20 JOGOS -->
+            <div id="lista-ps5" class="lista-jogos ativo">
+                <h2>PlayStation 5 (PS5) - Coleção Next Gen</h2>
+                <div class="grid-jogos">
+                    <div class="card-jogo" data-nome="Atomfall" data-preco="49.90" data-descricao="Pós-apocalipse britânico." data-console="ps5">
+                        <img src="atomfall.jpg" alt="Atomfall" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Atomfall'">
+                        <h3>Atomfall: Hobbs Quarry</h3>
+                        <div class="preco">€49,90</div>
+                        <div class="estrelas" data-avaliacao="4.5">⭐⭐⭐⭐☆ 4.5</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Dead Cells" data-preco="34.90" data-descricao="Roguelite de ação frenética." data-console="ps5">
+                        <img src="deadcells.jpg" alt="Dead Cells" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Dead+Cells'">
+                        <h3>Dead Cells: Castlevania Edition</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="God of War Ragnarök" data-preco="59.90" data-descricao="O fim do inverno de Fimbulwinter." data-console="ps5">
+                        <img src="god-of-war-ragnarok.webp" alt="GOW Ragnarök" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=God+of+War+Ragnarok'">
+                        <h3>God of War Ragnarök</h3>
+                        <div class="preco">€59,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Expedition" data-preco="44.90" data-descricao="Aventura GOTY." data-console="ps5">
+                        <img src="GOTY.jpg" alt="Expedition" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Expedition'">
+                        <h3>Expedition: GOTY Edition</h3>
+                        <div class="preco">€44,90</div>
+                        <div class="estrelas" data-avaliacao="4.4">⭐⭐⭐⭐☆ 4.4</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Metro Exodus" data-preco="39.90" data-descricao="Pós-apocalipse na Rússia." data-console="ps5">
+                        <img src="metro.webp" alt="Metro Exodus" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Metro+Exodus'">
+                        <h3>Metro Exodus: Complete Edition</h3>
+                        <div class="preco">€39,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Minecraft Legends" data-preco="44.90" data-descricao="Estratégia no mundo Minecraft." data-console="ps5">
+                        <img src="mine.jpg" alt="Minecraft Legends" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Minecraft+Legends'">
+                        <h3>Minecraft Legends: Deluxe Edition</h3>
+                        <div class="preco">€44,90</div>
+                        <div class="estrelas" data-avaliacao="4.3">⭐⭐⭐⭐☆ 4.3</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Pragmata" data-preco="59.90" data-descricao="Ficção científica da Capcom." data-console="ps5">
+                        <img src="pragmata.jpg" alt="Pragmata" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Pragmata'">
+                        <h3>Pragmata</h3>
+                        <div class="preco">€59,90</div>
+                        <div class="estrelas" data-avaliacao="4.7">⭐⭐⭐⭐⭐ 4.7</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Resident Evil Requiem" data-preco="54.90" data-descricao="Terror de nova geração." data-console="ps5">
+                        <img src="residentevill.jpg" alt="Resident Evil" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Resident+Evil'">
+                        <h3>Resident Evil: Requiem</h3>
+                        <div class="preco">€54,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Saros" data-preco="49.90" data-descricao="Novo jogo dos criadores de Returnal." data-console="ps5">
+                        <img src="saros.jpg" alt="Saros" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Saros'">
+                        <h3>Saros</h3>
+                        <div class="preco">€49,90</div>
+                        <div class="estrelas" data-avaliacao="4.5">⭐⭐⭐⭐☆ 4.5</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Silent Hill Day One" data-preco="64.90" data-descricao="O retorno do terror psicológico." data-console="ps5">
+                        <img src="silenthill.jpg" alt="Silent Hill" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Silent+Hill'">
+                        <h3>Silent Hill: Day One Edition</h3>
+                        <div class="preco">€64,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Slime Rancher 2" data-preco="29.90" data-descricao="Colete slimes em novo mundo." data-console="ps5">
+                        <img src="slr.jpg" alt="Slime Rancher 2" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Slime+Rancher'">
+                        <h3>Slime Rancher 2</h3>
+                        <div class="preco">€29,90</div>
+                        <div class="estrelas" data-avaliacao="4.6">⭐⭐⭐⭐☆ 4.6</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Sonic Frontiers" data-preco="49.90" data-descricao="Mundo aberto do Sonic." data-console="ps5">
+                        <img src="sonic.jpg" alt="Sonic Frontiers" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Sonic+Frontiers'">
+                        <h3>Sonic Frontiers</h3>
+                        <div class="preco">€49,90</div>
+                        <div class="estrelas" data-avaliacao="4.6">⭐⭐⭐⭐☆ 4.6</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Stray" data-preco="34.90" data-descricao="Um gato perdido em cidade cyberpunk." data-console="ps5">
+                        <img src="stray.webp" alt="Stray" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Stray'">
+                        <h3>Stray</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="The Walking Dead Destinies" data-preco="44.90" data-descricao="Escolhas importam." data-console="ps5">
+                        <img src="twd.jpg" alt="TWD" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Walking+Dead'">
+                        <h3>The Walking Dead: Destinies</h3>
+                        <div class="preco">€44,90</div>
+                        <div class="estrelas" data-avaliacao="4.3">⭐⭐⭐⭐☆ 4.3</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Wo Long" data-preco="54.90" data-descricao="Souls-like na China antiga." data-console="ps5">
+                        <img src="wolong.jpg" alt="Wo Long" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Wo+Long'">
+                        <h3>Wo Long: Fallen Dynasty</h3>
+                        <div class="preco">€54,90</div>
+                        <div class="estrelas" data-avaliacao="4.8">⭐⭐⭐⭐⭐ 4.8</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Ghost of Yotei" data-preco="59.90" data-descricao="A nova aventura no Japão feudal." data-console="ps5">
+                        <img src="toei.jpg" alt="Ghost of Yotei" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Ghost+of+Yotei'">
+                        <h3>Ghost of Yotei</h3>
+                        <div class="preco">€59,90</div>
+                        <div class="estrelas" data-avaliacao="4.9">⭐⭐⭐⭐⭐ 4.9</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="South Park Snow Day" data-preco="44.90" data-descricao="As crianças de South Park." data-console="ps5">
+                        <img src="southpark.jpg" alt="South Park" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=South+Park'">
+                        <h3>South Park: Snow Day!</h3>
+                        <div class="preco">€44,90</div>
+                        <div class="estrelas" data-avaliacao="4.2">⭐⭐⭐⭐☆ 4.2</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Demon's Souls Remake" data-preco="59.90" data-descricao="O remake do clássico PS3." data-console="ps5">
+                        <img src="demonsouls.jpg" alt="Demon's Souls" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Demon+Souls'">
+                        <h3>Demon's Souls (Remake)</h3>
+                        <div class="preco">€59,90</div>
+                        <div class="estrelas" data-avaliacao="5.0">⭐⭐⭐⭐⭐ 5.0</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="FNAF Security Breach" data-preco="34.90" data-descricao="Terror na pizzaria." data-console="ps5">
+                        <img src="fnaf.jpg" alt="FNAF" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=FNAF'">
+                        <h3>Five Nights at Freddy's: Security Breach</h3>
+                        <div class="preco">€34,90</div>
+                        <div class="estrelas" data-avaliacao="4.4">⭐⭐⭐⭐☆ 4.4</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="card-jogo" data-nome="Chernobylite" data-preco="39.90" data-descricao="Sobrevivência em Chernobyl." data-console="ps5">
+                        <img src="chernobylife.jpg" alt="Chernobylite" class="jogo-imagem" onerror="this.src='https://via.placeholder.com/180x180?text=Chernobylite'">
+                        <h3>Chernobylite</h3>
+                        <div class="preco">€39,90</div>
+                        <div class="estrelas" data-avaliacao="4.5">⭐⭐⭐⭐☆ 4.5</div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="conteudo-secundario">
+            <div class="interna">
+                <h1>Promoção</h1>
+                <p><strong>🔥 Compre 2 jogos e ganhe frete grátis!</strong></p>
+                <p>Avaliação gratuita de coleções.</p>
+                
+                <h2>Atendimento</h2>
+                <p>Seg a Sex: 10h às 19h<br>Sáb: 10h às 14h</p>
+                <p><a href="contato.html">Fale conosco →</a></p>
+                
+                <h2>PS5 Coleção</h2>
+                <p>✔️ 20 jogos Next Gen<br>✔️ Edições especiais<br>✔️ Preços imperdíveis</p>
+                
+                <div class="cupom-box">
+                    <h3>🎟️ CUPOM DE DESCONTO</h3>
+                    <p>Use o código no carrinho:</p>
+                    <div class="cupom-codigo">NEWSTATION10</div>
+                    <p class="cupom-desconto">10% OFF em toda loja!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="rodape-fora">
+        <div id="rodape" class="grupo">
+            <div class="footer-column">
+                <p id="telefone-email">newstation@playstation.pt<br><span class="ddd">+351</span> 91 234 5678</p>
+            </div>
+            <div class="footer-column">
+                <p id="endereco">Rua dos Games, 42<br>4430-189 Vila Nova de Gaia, PT</p>
+            </div>
+            <div class="footer-column">
+                <div class="visit-counter">🎮 Visitantes: <span id="visit-count">0</span></div>
+                <small id="copyright">&copy; Newstation Studio - Todos os Direitos Reservados.</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAIS -->
+<div id="carrinho-modal" class="carrinho-modal">
+    <div class="carrinho-modal-conteudo">
+        <div class="carrinho-modal-header">
+            <h2>🛒 Meu Carrinho</h2>
+            <span class="carrinho-fechar">&times;</span>
+        </div>
+        <div class="carrinho-modal-body">
+            <div id="carrinho-lista"><p class="carrinho-vazio">Seu carrinho está vazio.</p></div>
+            <div class="cupom-carrinho">
+                <label for="cupom-input">Código de cupom:</label>
+                <div class="cupom-input-group">
+                    <input type="text" id="cupom-input" placeholder="Digite seu cupom">
+                    <button id="aplicar-cupom" class="btn-cupom">Aplicar</button>
+                </div>
+                <div id="cupom-mensagem" class="cupom-mensagem"></div>
+            </div>
+        </div>
+        <div class="carrinho-modal-footer">
+            <div class="carrinho-total"><strong>Subtotal:</strong> <span id="carrinho-subtotal">€0,00</span></div>
+            <div class="carrinho-desconto" id="carrinho-desconto" style="display: none;"><strong>Desconto (10%):</strong> -<span id="desconto-valor">€0,00</span></div>
+            <div class="carrinho-total-final"><strong>TOTAL:</strong> <span id="carrinho-total">€0,00</span></div>
+            <button id="carrinho-finalizar" class="btn-finalizar">Finalizar Compra</button>
+        </div>
+    </div>
+</div>
+
+<div id="favoritos-modal" class="favoritos-modal">
+    <div class="favoritos-modal-conteudo">
+        <div class="favoritos-modal-header">
+            <h2>⭐ Meus Favoritos</h2>
+            <span class="favoritos-fechar">&times;</span>
+        </div>
+        <div class="favoritos-modal-body"><div id="favoritos-lista"><p class="favoritos-vazio">Você ainda não tem jogos favoritos.</p></div></div>
+        <div class="favoritos-modal-footer"><button id="adicionar-tudo-carrinho" class="btn-adicionar-tudo">➕ Adicionar tudo ao carrinho</button></div>
+    </div>
+</div>
+
+<div id="detalhes-modal" class="detalhes-modal">
+    <div class="detalhes-modal-conteudo">
+        <div class="detalhes-modal-header">
+            <h2 id="detalhes-nome">Nome do Jogo</h2>
+            <span class="detalhes-fechar">&times;</span>
+        </div>
+        <div class="detalhes-modal-body">
+            <div class="detalhes-grid">
+                <div class="detalhes-imagem"><img id="detalhes-img" src="" alt=""></div>
+                <div class="detalhes-info">
+                    <p id="detalhes-descricao"></p>
+                    <div class="detalhes-preco" id="detalhes-preco"></div>
+                    <div class="detalhes-console" id="detalhes-console"></div>
+                    <button id="detalhes-comprar" class="btn-comprar">🛒 Comprar Agora</button>
+                </div>
+            </div>
+            <div class="avaliacoes-section">
+                <h3>⭐ Avaliações dos Clientes</h3>
+                <div id="avaliacoes-lista" class="avaliacoes-lista"></div>
+                <div class="avaliar-form">
+                    <h4>Deixe sua avaliação:</h4>
+                    <div class="avaliar-estrelas">
+                        <span class="avaliar-star" data-nota="1">☆</span>
+                        <span class="avaliar-star" data-nota="2">☆</span>
+                        <span class="avaliar-star" data-nota="3">☆</span>
+                        <span class="avaliar-star" data-nota="4">☆</span>
+                        <span class="avaliar-star" data-nota="5">☆</span>
+                    </div>
+                    <textarea id="avaliar-comentario" placeholder="Escreva seu comentário..."></textarea>
+                    <button id="avaliar-enviar" class="btn-avaliar">Enviar Avaliação</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// ========== VARIÁVEIS GLOBAIS ==========
+let carrinho = [];
+let favoritos = [];
+let visitas = 0;
+let descontoAtivo = false;
+let jogoAtual = {};
+let darkMode = true;
+
+// ========== MODO ESCURO/CLARO ==========
+function toggleDarkMode() {
+    darkMode = !darkMode;
+    if (darkMode) {
+        document.body.style.background = "#0a0a1a";
+        document.body.style.color = "#f0f0f0";
+        document.querySelector('.theme-icon').textContent = "🌙";
+    } else {
+        document.body.style.background = "#f5f5f5";
+        document.body.style.color = "#333";
+        document.querySelector('.theme-icon').textContent = "☀️";
+    }
+    localStorage.setItem('darkMode', darkMode);
+}
+
+// ========== CONTADOR DE VISITAS ==========
+function carregarVisitas() {
+    let visits = localStorage.getItem('visitCount');
+    if (visits) visitas = parseInt(visits) + 1;
+    else visitas = 1;
+    localStorage.setItem('visitCount', visitas);
+    document.getElementById('visit-count').textContent = visitas;
+}
+
+// ========== CUPOM ==========
+function aplicarCupom(codigo) {
+    if (codigo.toUpperCase() === 'NEWSTATION10') {
+        descontoAtivo = true;
+        document.getElementById('cupom-mensagem').innerHTML = '<span style="color:#00ff00;">✅ Cupom aplicado! 10% de desconto!</span>';
+        atualizarCarrinho();
+        return true;
+    } else {
+        document.getElementById('cupom-mensagem').innerHTML = '<span style="color:#ff4444;">❌ Cupom inválido!</span>';
+        return false;
+    }
+}
+
+// ========== CARRINHO ==========
+function carregarCarrinho() {
+    const salvo = localStorage.getItem('carrinho');
+    if (salvo) carrinho = JSON.parse(salvo);
+    atualizarCarrinho();
+}
+function salvarCarrinho() { localStorage.setItem('carrinho', JSON.stringify(carrinho)); atualizarCarrinho(); }
+function atualizarCarrinho() {
+    const contador = document.getElementById('carrinho-contador');
+    const totalSpan = document.getElementById('carrinho-total');
+    const subtotalSpan = document.getElementById('carrinho-subtotal');
+    const listaDiv = document.getElementById('carrinho-lista');
+    const descontoDiv = document.getElementById('carrinho-desconto');
+    const descontoValor = document.getElementById('desconto-valor');
+    const totalItens = carrinho.reduce((sum, item) => sum + item.quantidade, 0);
+    if (contador) contador.textContent = totalItens;
+    let subtotal = carrinho.reduce((sum, item) => sum + (item.preco * item.quantidade), 0);
+    let desconto = descontoAtivo ? subtotal * 0.1 : 0;
+    let total = subtotal - desconto;
+    if (subtotalSpan) subtotalSpan.textContent = `€${subtotal.toFixed(2)}`;
+    if (totalSpan) totalSpan.textContent = `€${total.toFixed(2)}`;
+    if (descontoValor) descontoValor.textContent = `€${desconto.toFixed(2)}`;
+    if (descontoDiv) descontoDiv.style.display = descontoAtivo ? 'flex' : 'none';
+    if (listaDiv) {
+        if (carrinho.length === 0) listaDiv.innerHTML = '<p class="carrinho-vazio">Seu carrinho está vazio.</p>';
+        else {
+            listaDiv.innerHTML = carrinho.map((item, index) => `
+                <div class="carrinho-item">
+                    <div class="carrinho-item-info"><div class="carrinho-item-nome">${item.nome}</div><div class="carrinho-item-preco">€${item.preco.toFixed(2)}</div></div>
+                    <div class="carrinho-item-quantidade"><button onclick="alterarQuantidade(${index}, -1)">-</button><span>${item.quantidade}</span><button onclick="alterarQuantidade(${index}, 1)">+</button></div>
+                    <div class="carrinho-item-subtotal">€${(item.preco * item.quantidade).toFixed(2)}</div>
+                    <button class="carrinho-remover" onclick="removerItem(${index})">🗑️</button>
+                </div>`).join('');
+        }
+    }
+}
+function adicionarAoCarrinho(nome, preco) {
+    const itemExistente = carrinho.find(item => item.nome === nome);
+    if (itemExistente) itemExistente.quantidade++;
+    else carrinho.push({ nome, preco, quantidade: 1 });
+    salvarCarrinho();
+    const icone = document.getElementById('carrinho-icone');
+    if (icone) { icone.style.transform = 'scale(1.1)'; setTimeout(() => icone.style.transform = '', 200); }
+}
+function alterarQuantidade(index, delta) {
+    const novaQuantidade = carrinho[index].quantidade + delta;
+    if (novaQuantidade <= 0) carrinho.splice(index, 1);
+    else carrinho[index].quantidade = novaQuantidade;
+    salvarCarrinho();
+}
+function removerItem(index) { carrinho.splice(index, 1); salvarCarrinho(); }
+
+// ========== FAVORITOS ==========
+function carregarFavoritos() {
+    const salvos = localStorage.getItem('favoritos');
+    if (salvos) favoritos = JSON.parse(salvos);
+    atualizarFavoritos();
+    adicionarBotoesFavorito();
+}
+function salvarFavoritos() { localStorage.setItem('favoritos', JSON.stringify(favoritos)); atualizarFavoritos(); }
+function atualizarFavoritos() {
+    const contador = document.getElementById('favoritos-contador');
+    const listaDiv = document.getElementById('favoritos-lista');
+    if (contador) contador.textContent = favoritos.length;
+    if (listaDiv) {
+        if (favoritos.length === 0) listaDiv.innerHTML = '<p class="favoritos-vazio">Você ainda não tem jogos favoritos.</p>';
+        else listaDiv.innerHTML = favoritos.map((item, index) => `<div class="favoritos-item"><div class="favoritos-item-info"><div class="favoritos-item-nome">${item.nome}</div><div class="favoritos-item-preco">€${item.preco.toFixed(2)}</div></div><button class="favoritos-remover" onclick="removerFavorito(${index})">🗑️</button></div>`).join('');
+    }
+}
+function toggleFavorito(nome, preco) {
+    const existe = favoritos.find(fav => fav.nome === nome);
+    if (existe) favoritos = favoritos.filter(fav => fav.nome !== nome);
+    else favoritos.push({ nome, preco });
+    salvarFavoritos();
+    atualizarBotoesFavorito();
+}
+function removerFavorito(index) { favoritos.splice(index, 1); salvarFavoritos(); atualizarBotoesFavorito(); }
+function adicionarTudoAoCarrinho() {
+    if (favoritos.length === 0) { alert('Você não tem nenhum jogo nos favoritos!'); return; }
+    let total = 0;
+    favoritos.forEach(fav => {
+        const itemExistente = carrinho.find(item => item.nome === fav.nome);
+        if (itemExistente) itemExistente.quantidade++;
+        else carrinho.push({ nome: fav.nome, preco: fav.preco, quantidade: 1 });
+        total += fav.preco;
+    });
+    favoritos = [];
+    salvarFavoritos();
+    salvarCarrinho();
+    atualizarBotoesFavorito();
+    alert(`✅ Todos os favoritos foram adicionados ao carrinho! Total: €${total.toFixed(2)}`);
+}
+function atualizarBotoesFavorito() {
+    document.querySelectorAll('.btn-favorito').forEach(botao => {
+        const nomeJogo = botao.getAttribute('data-jogo');
+        const isFavorito = favoritos.some(fav => fav.nome === nomeJogo);
+        botao.classList.toggle('ativo', isFavorito);
+        botao.textContent = isFavorito ? '❤️' : '🤍';
+    });
+}
+function adicionarBotoesFavorito() {
+    document.querySelectorAll('.card-jogo').forEach(card => {
+        if (card.querySelector('.btn-favorito')) return;
+        const nome = card.getAttribute('data-nome') || card.querySelector('h3')?.textContent || 'Jogo';
+        const precoTexto = card.querySelector('.preco')?.textContent || '€0,00';
+        const preco = parseFloat(precoTexto.replace('€', '').replace(',', '.'));
+        const btn = document.createElement('button');
+        btn.className = 'btn-favorito';
+        btn.setAttribute('data-jogo', nome);
+        btn.textContent = '🤍';
+        btn.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); toggleFavorito(nome, preco); });
+        card.style.position = 'relative';
+        card.insertBefore(btn, card.firstChild);
+    });
+    atualizarBotoesFavorito();
+}
+
+// ========== PESQUISA ==========
+function configurarPesquisa() {
+    const input = document.getElementById('search-input');
+    const results = document.getElementById('search-results');
+    if (!input) return;
+    input.addEventListener('input', function() {
+        const termo = this.value.toLowerCase();
+        if (termo.length < 2) { results.style.display = 'none'; return; }
+        const cards = document.querySelectorAll('.card-jogo');
+        const encontrados = [];
+        cards.forEach(card => {
+            const nome = card.getAttribute('data-nome') || card.querySelector('h3')?.textContent || '';
+            if (nome.toLowerCase().includes(termo)) encontrados.push(card);
+        });
+        if (encontrados.length > 0) {
+            results.innerHTML = encontrados.map(card => `<div class="search-item" data-nome="${card.getAttribute('data-nome')}">🎮 ${card.getAttribute('data-nome')}</div>`).join('');
+            results.style.display = 'block';
+            document.querySelectorAll('.search-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    input.value = item.getAttribute('data-nome');
+                    results.style.display = 'none';
+                    abrirModalDetalhesPorNome(item.getAttribute('data-nome'));
+                });
+            });
+        } else { results.innerHTML = '<div class="search-item">Nenhum jogo encontrado</div>'; results.style.display = 'block'; }
+    });
+    document.addEventListener('click', (e) => { if (!input.contains(e.target) && !results.contains(e.target)) results.style.display = 'none'; });
+}
+
+// ========== LANÇAMENTOS ==========
+function carregarLancamentos() {
+    const lancamentos = [
+        { nome: "Ghost of Yotei", preco: "59.90", imagem: "toei.jpg" },
+        { nome: "God of War Ragnarök", preco: "59.90", imagem: "god-of-war-ragnarok.webp" },
+        { nome: "Stray", preco: "34.90", imagem: "stray.webp" },
+        { nome: "Dead Cells", preco: "34.90", imagem: "deadcells.jpg" }
+    ];
+    const container = document.getElementById('lancamentos-grid');
+    if (container) {
+        container.innerHTML = lancamentos.map(jogo => `
+            <div class="card-lancamento" data-nome="${jogo.nome}" data-preco="${jogo.preco}">
+                <img src="${jogo.imagem}" onerror="this.src='https://via.placeholder.com/180x180?text=${jogo.nome}'">
+                <h3>${jogo.nome}</h3>
+                <div class="preco">€${jogo.preco}</div>
+                <button class="btn-comprar-lancamento">Comprar</button>
+            </div>`).join('');
+        document.querySelectorAll('.card-lancamento').forEach(card => {
+            card.addEventListener('click', (e) => { if (!e.target.classList.contains('btn-comprar-lancamento')) abrirModalDetalhesPorNome(card.getAttribute('data-nome')); });
+            card.querySelector('.btn-comprar-lancamento')?.addEventListener('click', (e) => { e.stopPropagation(); adicionarAoCarrinho(card.getAttribute('data-nome'), parseFloat(card.getAttribute('data-preco'))); });
+        });
+    }
+}
+
+// ========== DETALHES ==========
+function abrirModalDetalhesPorNome(nome) {
+    const card = Array.from(document.querySelectorAll('.card-jogo')).find(c => (c.getAttribute('data-nome') || c.querySelector('h3')?.textContent) === nome);
+    if (card) abrirModalDetalhes(card);
+    else alert(`Jogo "${nome}" não encontrado.`);
+}
+function abrirModalDetalhes(card) {
+    const nome = card.getAttribute('data-nome') || card.querySelector('h3')?.textContent || 'Jogo';
+    const preco = parseFloat(card.querySelector('.preco')?.textContent.replace('€', '').replace(',', '.') || 0);
+    const descricao = card.getAttribute('data-descricao') || 'Jogo incrível para PlayStation.';
+    const consoleJogo = card.getAttribute('data-console') || 'ps5';
+    const imgSrc = card.querySelector('.jogo-imagem')?.src || '';
+    jogoAtual = { nome, preco, descricao, console: consoleJogo, imgSrc };
+    document.getElementById('detalhes-nome').textContent = nome;
+    document.getElementById('detalhes-descricao').textContent = descricao;
+    document.getElementById('detalhes-preco').innerHTML = `<strong>Preço:</strong> €${preco.toFixed(2)}`;
+    document.getElementById('detalhes-console').innerHTML = `<strong>Plataforma:</strong> ${consoleJogo.toUpperCase()}`;
+    document.getElementById('detalhes-img').src = imgSrc;
+    document.getElementById('detalhes-img').onerror = function() { this.src = 'https://via.placeholder.com/300x300?text=' + nome; };
+    let avaliacoes = JSON.parse(localStorage.getItem(`avaliacoes_${nome}`)) || [];
+    const avDiv = document.getElementById('avaliacoes-lista');
+    if (avDiv) avDiv.innerHTML = avaliacoes.length ? avaliacoes.map(av => `<div class="avaliacao-item"><div class="avaliacao-estrelas">${'⭐'.repeat(av.nota)}${'☆'.repeat(5-av.nota)}</div><div class="avaliacao-comentario">"${av.comentario}"</div></div>`).join('') : '<p>Seja o primeiro a avaliar este jogo!</p>';
+    document.getElementById('detalhes-modal').style.display = 'block';
+}
+function finalizarCompra() {
+    if (carrinho.length === 0) { alert('Seu carrinho está vazio!'); return; }
+    let total = carrinho.reduce((sum, item) => sum + (item.preco * item.quantidade), 0);
+    if (descontoAtivo) total *= 0.9;
+    alert(`🛒 COMPRA FINALIZADA!\n💰 Total: €${total.toFixed(2)}\n📦 Pedido enviado! Entraremos em contato.`);
+    carrinho = [];
+    descontoAtivo = false;
+    salvarCarrinho();
+    document.getElementById('carrinho-modal').style.display = 'none';
+    const cupomInput = document.getElementById('cupom-input');
+    if (cupomInput) cupomInput.value = '';
+    const cupomMsg = document.getElementById('cupom-mensagem');
+    if (cupomMsg) cupomMsg.innerHTML = '';
+}
+
+// ========== BOTÕES DOS CONSOLES ==========
+document.querySelectorAll('.btn-console').forEach(btn => {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.btn-console').forEach(b => b.classList.remove('ativo-console'));
+        this.classList.add('ativo-console');
+        document.querySelectorAll('.lista-jogos').forEach(lista => lista.classList.remove('ativo'));
+        document.getElementById(`lista-${this.getAttribute('data-console')}`).classList.add('ativo');
+    });
+});
+
+// ========== CONFIGURAR CLIQUE NOS CARDS ==========
+document.querySelectorAll('.card-jogo').forEach(card => {
+    card.addEventListener('click', (e) => { if (!e.target.classList.contains('btn-comprar') && !e.target.classList.contains('btn-favorito')) abrirModalDetalhes(card); });
+});
+
+// ========== BOTÕES COMPRAR ==========
+function configurarBotoesComprar() {
+    document.querySelectorAll('.btn-comprar').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const card = btn.closest('.card-jogo');
+            if (card) {
+                adicionarAoCarrinho(card.getAttribute('data-nome') || card.querySelector('h3')?.textContent, parseFloat(card.querySelector('.preco')?.textContent.replace('€', '').replace(',', '.')));
+                btn.textContent = '✓ Adicionado!';
+                setTimeout(() => btn.textContent = 'Comprar', 1000);
+            }
+        });
+    });
+}
+
+// ========== AVALIAÇÃO ==========
+let notaSelecionada = 0;
+document.querySelectorAll('.avaliar-star').forEach(star => {
+    star.addEventListener('click', () => {
+        notaSelecionada = parseInt(star.getAttribute('data-nota'));
+        document.querySelectorAll('.avaliar-star').forEach((s, i) => s.textContent = i < notaSelecionada ? '★' : '☆');
+    });
+});
+document.getElementById('avaliar-enviar')?.addEventListener('click', () => {
+    if (notaSelecionada === 0) { alert('Selecione uma nota!'); return; }
+    const comentario = document.getElementById('avaliar-comentario').value;
+    if (!comentario.trim()) { alert('Escreva um comentário!'); return; }
+    let avaliacoes = JSON.parse(localStorage.getItem(`avaliacoes_${jogoAtual.nome}`)) || [];
+    avaliacoes.push({ nota: notaSelecionada, comentario });
+    localStorage.setItem(`avaliacoes_${jogoAtual.nome}`, JSON.stringify(avaliacoes));
+    alert('Avaliação enviada! Obrigado!');
+    document.getElementById('avaliar-comentario').value = '';
+    notaSelecionada = 0;
+    document.querySelectorAll('.avaliar-star').forEach(s => s.textContent = '☆');
+    location.reload();
+});
+
+// ========== INICIALIZAR ==========
+document.addEventListener('DOMContentLoaded', () => {
+    carregarCarrinho();
+    carregarFavoritos();
+    carregarVisitas();
+    carregarLancamentos();
+    configurarPesquisa();
+    configurarBotoesComprar();
+    const darkModeStorage = localStorage.getItem('darkMode');
+    if (darkModeStorage === 'false') toggleDarkMode();
+    document.getElementById('theme-toggle')?.addEventListener('click', toggleDarkMode);
+    document.getElementById('carrinho-icone')?.addEventListener('click', () => document.getElementById('carrinho-modal').style.display = 'block');
+    document.querySelector('.carrinho-fechar')?.addEventListener('click', () => document.getElementById('carrinho-modal').style.display = 'none');
+    document.getElementById('carrinho-finalizar')?.addEventListener('click', finalizarCompra);
+    document.getElementById('favoritos-icone')?.addEventListener('click', () => document.getElementById('favoritos-modal').style.display = 'block');
+    document.querySelector('.favoritos-fechar')?.addEventListener('click', () => document.getElementById('favoritos-modal').style.display = 'none');
+    document.getElementById('adicionar-tudo-carrinho')?.addEventListener('click', adicionarTudoAoCarrinho);
+    document.getElementById('aplicar-cupom')?.addEventListener('click', () => aplicarCupom(document.getElementById('cupom-input').value));
+    document.querySelector('.detalhes-fechar')?.addEventListener('click', () => document.getElementById('detalhes-modal').style.display = 'none');
+    document.getElementById('detalhes-comprar')?.addEventListener('click', () => { adicionarAoCarrinho(jogoAtual.nome, jogoAtual.preco); document.getElementById('detalhes-modal').style.display = 'none'; });
+    window.addEventListener('click', (e) => {
+        if (e.target === document.getElementById('carrinho-modal')) document.getElementById('carrinho-modal').style.display = 'none';
+        if (e.target === document.getElementById('favoritos-modal')) document.getElementById('favoritos-modal').style.display = 'none';
+        if (e.target === document.getElementById('detalhes-modal')) document.getElementById('detalhes-modal').style.display = 'none';
+    });
+});
+</script>
+</body>
+</html>
